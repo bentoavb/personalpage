@@ -8,7 +8,7 @@ import Publications from '@/components/content/Publications'
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: 'history',
+    //mode: 'history',
     history: true,
     routes: [
         {
