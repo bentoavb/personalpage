@@ -1,3 +1,3 @@
 # bentoavb.github.io
 
-Página Pessoal
+Página pessoal criada com Vue.js
