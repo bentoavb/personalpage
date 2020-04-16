@@ -4,9 +4,9 @@
             <div class="publication-title">{{item.title}}</div>
             <div class="publication-author">{{item.author}}</div>
             <div class="publication-date-and-place">
+                <span class="doi"><a :href="item.doi" target="_blank" >doi</a></span>
                 <span><i class="fas fa-calendar-alt"></i> {{item.year}}</span>
                 <span class="place"> <i :class="item.icon"></i> {{item.place}}</span>
-                <span class="doi"><a :href="item.doi" target="_blank" >doi</a></span>
             </div>
             <div class="publication-abstract">
                 {{item.abstract}}
@@ -70,5 +70,25 @@ export default {
 .publication-abstract {
     font-size: 0.8rem;
     text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+    .publication{
+        padding: 10px;
+    }
+    .publication-title{
+        font-size: 1rem;
+    }
+    .publication-author {
+        font-size: 0.9rem;
+    }
+    .publication-date-and-place{
+        margin: 5px 0;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 0.9rem;
+    }
 }
 </style>

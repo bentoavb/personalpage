@@ -21,5 +21,6 @@ export default {
   -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   border-radius: 5px;
+  height: 100%;
 }
 </style>

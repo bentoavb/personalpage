@@ -52,4 +52,11 @@ export default {
 .home-name span {
   margin-bottom: -25px;
 }
+
+@media screen and (max-width: 800px) {
+  .home {
+    display: none;
+  }
+}
+
 </style>

@@ -37,7 +37,7 @@ export default {
 }
 @media screen and (max-width: 800px) {
 .menu {
-    padding: 25px 0;
+    padding: 20px 0;
 }
 }
 </style>

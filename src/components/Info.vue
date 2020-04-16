@@ -121,8 +121,18 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
-    .links {
+    .name-buttons h1 {
+      font-size: 1.5rem;
+    }
+    .picture .name h2 {
+      font-size: 1.2rem;
+    }
+    .text {
+      font-size: 1rem;
+    }
+    .links .link{
       margin: 25px 0;
+      font-size: 0.8rem;
     }
 }
 </style>
