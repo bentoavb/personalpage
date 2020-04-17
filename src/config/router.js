@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '@/components/content/Home'
 import Education from '@/components/content/Education'
 import Publications from '@/components/content/Publications'
+import Projects from '@/components/content/Projects'
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,11 @@ const router = new VueRouter({
             name: 'Publications',
             path: '/publications',
             component: Publications
+        },
+        {
+            name: 'Projects',
+            path: '/projects',
+            component: Projects
         }
     ]
 })

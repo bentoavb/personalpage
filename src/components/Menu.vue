@@ -2,6 +2,7 @@
   <div class="menu">
       <div class="menu-item" @click="navigate('/education')">{{$t('education')}}</div>
       <div class="menu-item" @click="navigate('/publications')">{{$t('publication')}}</div>
+      <div class="menu-item" @click="navigate('/projects')">{{$t('projectsTitle')}}</div>
   </div>
 </template>
 
@@ -36,8 +37,11 @@ export default {
     background-color: rgba(0,0,0,0.1);
 }
 @media screen and (max-width: 800px) {
-.menu {
-    padding: 20px 0;
-}
+    .menu {
+        padding: 20px 0;
+    }
+    .menu-item{
+        margin: 0 10px;
+    }
 }
 </style>

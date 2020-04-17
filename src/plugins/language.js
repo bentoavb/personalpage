@@ -50,7 +50,9 @@ const messages = {
                 year: "2019",
                 place: "Brazilian Symposium on Intelligent Automation"
             }
-        ]
+        ],
+        projectsTitle: "Programming Projects",
+        projects: ["Page under construction","Visit my Github page"]
     },
     'br': {
         welcome: "Bem vindo",
@@ -98,7 +100,9 @@ const messages = {
                 year: "2019",
                 place: "Simpósio Brasileiro de Automação Inteligente"
             }
-        ]
+        ],
+        projectsTitle: "Projetos de Programação",
+        projects: ["Página em construção","Visite minha página do Github"]
     }
 };
 
