@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import i18n from '@/plugins/language';
+import i18n from '@/config/language';
 
 export default {
   name: 'Info',

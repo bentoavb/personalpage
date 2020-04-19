@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import i18n from '@/plugins/language';
+import i18n from '@/config/language';
 Vue.config.productionTip = false
 import FlagIcon from 'vue-flag-icon';
 Vue.use(FlagIcon);
