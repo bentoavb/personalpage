@@ -18,7 +18,17 @@ const messages = {
                 date: "2018 - Ongoing",
                 city: "Divinópolis, MG, Brazil",
                 others: [
-                    "Is currently working on a research project on control systems and evolving fuzzy systems, with an emphasis on fault detection and fault tolerant control.", "Was an undergraduate teaching assistant on C/C++ programming subjects."
+                    {
+                        title: "Since 2018, I'm working on a research project on control systems and evolving fuzzy systems, with an emphasis on:",
+                        others: [
+                            "Fault detection and fault tolerant control (2020).",
+                            "State estimation and nonlinear control (2019).",
+                            "Nonlinear control (2018)."
+                        ]
+                    },
+                    {
+                        title: "I was an undergraduate teaching assistant on C/C++ programming subjects in 2019."
+                    }
                 ]
             },
             {
@@ -27,7 +37,12 @@ const messages = {
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brazil",
                 others: [
-                    "Was a member of a robotics competition group in the second and third year of the course.", "Worked on a research project on  analysis and control of mobile robotics in the third year of the course."
+                    {
+                        title: "I was a member of a robotics competition group in the second and third year of the course."
+                    },
+                    {
+                        title:"I worked on a research project on  analysis and control of mobile robotics in the third year of the course."
+                    }
                 ]
             }
         ],
@@ -68,7 +83,17 @@ const messages = {
                 date: "2018 - Em andamento",
                 city: "Divinópolis, MG, Brasil",
                 others: [
-                    "Atualmente, está trabalhando em um projeto de pesquisa sobre sistemas de controle e sistemas fuzzy evolutivos, com ênfase em detecção de falhas e controle tolerante a falhas.", "Foi monitor de graduação de disciplinas de programação em C/C++"
+                    {
+                        title: "Desde 2018, eu estou trabalhando em um projeto de pesquisa sobre sistemas de controle e sistemas fuzzy evolutivos, com ênfase em:",
+                        others: [
+                            "Detecção de falhas e controle tolerante a falhas (2020).",
+                            "Estimadores de estados e controle não linear (2019).",
+                            "Controle não linear (2018)."
+                        ]
+                    },
+                    {
+                        title: "Fui monitor de graduação de disciplinas de programação em C/C++ em 2019."
+                    }
                 ]
             },
             {
@@ -77,7 +102,11 @@ const messages = {
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brasil",
                 others: [
-                    "Foi membro de um grupo de competição de robótica no segundo e terceiro ano do curso.", "Trabalhou em um projeto de pesquisa sobre análise e controle de robôs móveis no terceiro ano do curso."
+                    {
+                        title: "Fui membro de um grupo de competição de robótica no segundo e terceiro ano do curso."
+                    },{
+                        title: "Trabalhei em um projeto de pesquisa sobre análise e controle de robôs móveis no terceiro ano do curso."
+                    }
                 ]
             }
         ],

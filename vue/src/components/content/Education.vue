@@ -6,7 +6,12 @@
             <div class="education-date-and-city"><span><i class="fas fa-calendar-alt"></i> {{item.date}}</span><span><i class="fas fa-map-marked-alt"></i> {{item.city}}</span></div>
             <div class="education-others">
                 <ul v-for="e in item.others" :key="e">
-                    <li>{{e}}</li>
+                    <li>{{e.title}}</li>
+                    <ul v-if="e.others">
+                        <li v-for="j in e.others" :key="j">
+                            {{j}}
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </div>
