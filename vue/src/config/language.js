@@ -84,7 +84,7 @@ const messages = {
                 city: "Divinópolis, MG, Brasil",
                 others: [
                     {
-                        title: "Desde 2018, eu estou trabalhando em um projeto de pesquisa sobre sistemas de controle e sistemas fuzzy evolutivos, com ênfase em:",
+                        title: "Desde 2018, estou trabalhando em um projeto de pesquisa sobre sistemas de controle e sistemas fuzzy evolutivos, com ênfase em:",
                         others: [
                             "Detecção de falhas e controle tolerante a falhas (2020).",
                             "Estimadores de estados e controle não linear (2019).",
