@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <!--
     <div class="home-container">
       <span class="home-name">
         <span>b</span>
@@ -17,6 +18,7 @@
         <div style="margin-top: -25px;">ento</div>
       </span>
     </div>
+    -->
   </div>
 </template>
 
