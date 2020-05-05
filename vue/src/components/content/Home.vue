@@ -41,8 +41,7 @@ export default {
   justify-content: space-evenly;
 }
 .links .link {
-  color: white;
-  background-color: rgb(100, 100, 255);
+  color: black;
   -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
@@ -53,7 +52,7 @@ export default {
 }
 
 .links .link:hover {
-  background-color: rgba(100, 100, 255,0.7);
+  background-color: rgba(0, 0, 0,0.1);
 }
 
 

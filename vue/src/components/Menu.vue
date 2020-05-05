@@ -33,10 +33,12 @@ export default {
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     border-radius: 5px;
+    background-color: rgb(100, 100, 255);
+    color: white;
 }
 .menu-item:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(100,100,255,0.65);
 }
 @media screen and (max-width: 800px) {
     .menu {
