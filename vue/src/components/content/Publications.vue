@@ -4,13 +4,13 @@
             <div class="publication-title">{{item.title}}</div>
             <div class="publication-author">{{item.author}}</div>
             <div class="publication-date-and-place">
-                <span class="doi"><a :href="item.doi" target="_blank" >doi</a></span>
+                <span class="doi"><a :href="item.doi" target="_blank" >PDF</a></span>
                 <span><i class="fas fa-calendar-alt"></i> {{item.year}}</span>
                 <span class="place"> <i :class="item.icon"></i> {{item.place}}</span>
             </div>
-            <div class="publication-abstract">
+            <!--<div class="publication-abstract">
                 {{item.abstract}}
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@ export default {
             publicationItens: [
                 {
                     title: "Evolving granular feedback linearization: Design, analysis, and applications",
-                    author: "Lucas Oliveira, Anderson Bento, Valter J.S.Leite, Fernando Gomide",
+                    author: "Lucas Oliveira, Anderson Bento, Valter Leite, Fernando Gomide",
                     year: "2020",
                     doi: "https://doi.org/10.1016/j.asoc.2019.105927",
                     place: "Applied Soft Computing Journal",
@@ -32,12 +32,30 @@ export default {
                 },
                 {
                     title: "Linearização por realimentação granular robusta com algoritmo evolutivo Takagi-Sugeno: Análise e avaliação de desempenho",
-                    author: "Anderson Bento, Lucas Oliveira, Valter J.S.Leite, Fernando Gomide",
+                    author: "Anderson Bento, Lucas Oliveira, Valter Leite, Fernando Gomide",
                     doi: "https://www.doi.org/10.17648/sbai-2019-111229",
                     icon: "fas fa-map-marked",
                     abstract: "A linearização por realimentação é uma poderosa técnica de controle não linear, mas quando aplicada a situações em que há erro de modelagem, seu desempenho fica comprometido. A linearização por realimentação granular robusta é uma técnica que utiliza aprendizagem participativa para cancelar os efeitos causados por erros de modelagem na malha de controle. Esse trabalho objetiva avaliar o desempenho do controlador de linearização por realimentação granular robusta quando o mecanismo de aprendizagem é substituído pelo eTS, o algoritmo evolutivo Takagi-Sugeno. O controlador granular robusto com eTS é utilizado para que os estados de um pêndulo invertido siga uma trajetória especificada. Os resultados de simulação são quantificados usando os critérios da integral do valor absoluto do erro, da integral da variabilidade do erro e da integral da variabilidade do sinal de controle. Os resultados sugerem que o controlador granular robusto com eTS tem desempenho superior à linearização por realimentação exata.",
                     year: "2019",
                     place: "Simpósio Brasileiro de Automação Inteligente"
+                },
+                {
+                    title: "High-gain Observer Based Robust Evolving Granular Feedback Linearization",
+                    author: "Anderson Bento, Lucas Oliveira, Valter Leite, Ignacio Rubio Scola, Fernando Gomide",
+                    doi: "http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1619/1125",
+                    icon: "fas fa-map-marked",
+                    abstract: "...",
+                    year: "2019",
+                    place: "Conferência Brasileira de Dinâmica, Controle e Aplicações"
+                },
+                {
+                    title: "State Estimator Application in DC Motors of a Mobile Robot",
+                    author: "Anderson Bento, Lucas Oliveira, Ignacio Rubio Scola, Ariany Oliveira",
+                    doi: "https://www.doi.org/10.20906/CPS/CBA2018-0374",
+                    icon: "fas fa-map-marked",
+                    abstract: "...",
+                    year: "2018",
+                    place: "Congresso Brasileiro de Automática"
                 }
             ]
         }
@@ -47,12 +65,16 @@ export default {
 
 <style>
 .publication {
-    padding: 0 20px;
+    padding: 0 50px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
+}
+
+.publication-item {
+    width: 100%;
 }
 
 .publication-title {
@@ -71,6 +93,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 5px 0;
 }
 
 .publication-date-and-place .doi{
@@ -79,12 +102,18 @@ export default {
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     border-radius: 3px;
-    padding: 0 5px;
+}
+
+.doi:hover {
+    background-color: rgba(0,0,0,0.1);
 }
 
 .publication-date-and-place .doi a {
     text-decoration: none;
     color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0 5px;
 }
 
 .publication-date-and-place .place{
@@ -106,9 +135,10 @@ export default {
     .publication-author {
         font-size: 0.9rem;
     }
+    .publication-item {
+        margin: 10px 0;
+    }
     .publication-date-and-place{
-        margin: 5px 0;
-        /*flex-direction: column;*/
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;

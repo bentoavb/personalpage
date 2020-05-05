@@ -40,6 +40,10 @@ export default {
     font-size: 1.3rem;
 }
 
+.education-item{
+    width: 100%;
+}
+
 .education-place {
     font-weight: bold;
     font-size: 1.1rem;

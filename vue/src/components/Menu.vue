@@ -24,6 +24,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: bold;
 }
 .menu-item {
     padding: 3px 10px;
