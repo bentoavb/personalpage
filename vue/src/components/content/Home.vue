@@ -6,8 +6,8 @@
     
     <div class="links">
       <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="link"><i class="fab fa-researchgate"></i> ResearchGate</a>
-      <a href="http://lattes.cnpq.br/5455772822240957" target="_blank" class="link"><i class="far fa-file-alt"></i> Curriculum Lattes</a>
       <a href="https://github.com/bentoavb" target="_blank" class="link"><i class="fab fa-github"></i> GitHub</a>
+      <a href="http://lattes.cnpq.br/5455772822240957" target="_blank" class="link"><i class="far fa-file-alt"></i> Curriculum Lattes</a>
     </div>
   </div>
 </template>
@@ -66,9 +66,10 @@ export default {
     font-size: 1rem;
   }
   .links {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .links .link {
+    font-size: 0.7rem;
     margin-bottom: 10px;
   }
 }
