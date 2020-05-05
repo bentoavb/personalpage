@@ -1,24 +1,14 @@
 <template>
   <div class="home">
-    <!--
-    <div class="home-container">
-      <span class="home-name">
-        <span>b</span>
-        <span>e</span>
-        <span>n</span>
-        <span>t</span>
-        <span>o</span>
-        <span>a</span>
-        <span>v</span>
-        <span>b</span>
-      </span >
-      <span style="margin-bottom: -25px;">
-        <div style="margin-top: -25px;">nderson</div>
-        <div style="margin-top: -25px;">ítor</div>
-        <div style="margin-top: -25px;">ento</div>
-      </span>
+    <div class="text">
+      {{$t('infobiography')}}
     </div>
-    -->
+    
+    <div class="links">
+      <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="link"><i class="fab fa-researchgate"></i> ResearchGate</a>
+      <a href="http://lattes.cnpq.br/5455772822240957" target="_blank" class="link"><i class="far fa-file-alt"></i> Curriculum Lattes</a>
+      <a href="https://github.com/bentoavb" target="_blank" class="link"><i class="fab fa-github"></i> GitHub</a>
+    </div>
   </div>
 </template>
 
@@ -31,33 +21,55 @@ export default {
 <style>
 .home {
     height: 100%;
-    color: rgb(100, 100, 255);
-    font-size: 2rem;
+    padding: 0 30px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.home-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: row;
-}
-.home-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-weight: bold;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.home-name span {
-  margin-bottom: -25px;
+.home .text {
+  text-align: justify;
 }
+
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.links .link {
+  color: white;
+  background-color: rgb(100, 100, 255);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.0rem;
+}
+
+.links .link:hover {
+  background-color: rgba(100, 100, 255,0.7);
+}
+
 
 @media screen and (max-width: 800px) {
   .home {
-    display: none;
+    padding: 10px;
+  }
+  .home .text{
+    margin: 15px 0;
+    font-size: 1rem;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .links .link {
+    margin-bottom: 10px;
   }
 }
 

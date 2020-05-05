@@ -59,16 +59,21 @@ export default {
 @media screen and (max-width: 800px) {
     .education {
         padding: 10px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        text-align: justify;
     }
     .education-title{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .education-place {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .education-date-and-city {
+        margin: 5px 0;
         width: 100%;
+    }
+    ul {
+        padding-left: 10px;
     }
 
     .education {

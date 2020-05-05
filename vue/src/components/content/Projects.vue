@@ -1,9 +1,7 @@
 <template>
   <div class="projects">
     <span>{{$t('projects')[0]}}!</span>
-    <span>{{$t('projects')[1]}} 
-      <a href="https://github.com/bentoavb" target="_blank" class="link"><i class="fab fa-github"></i></a>
-    </span>
+    <a href="https://github.com/bentoavb" target="_blank" class="link">{{$t('projects')[1]}}  <i class="fab fa-github"></i></a>
   </div>
 </template>
 
@@ -30,7 +28,7 @@ export default {
 
 @media screen and (max-width: 800px) {
   .projects {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     padding: 30px 5px;
   }
 }

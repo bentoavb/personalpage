@@ -1,5 +1,6 @@
 <template>
   <div class="menu">
+      <div class="menu-item" @click="navigate('/')">{{$t('home')}}</div>
       <div class="menu-item" @click="navigate('/education')">{{$t('education')}}</div>
       <div class="menu-item" @click="navigate('/publications')">{{$t('publication')}}</div>
       <div class="menu-item" @click="navigate('/projects')">{{$t('projectsTitle')}}</div>
@@ -27,7 +28,7 @@ export default {
     font-weight: bold;
 }
 .menu-item {
-    padding: 3px 10px;
+    padding: 7px 15px;
     -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
@@ -39,10 +40,13 @@ export default {
 }
 @media screen and (max-width: 800px) {
     .menu {
-        padding: 20px 0;
+        padding: 5px 3px;
+        flex-wrap: wrap;
     }
     .menu-item{
-        margin: 0 10px;
+        margin: 3px 0;
+        font-size: 0.65rem;
+        flex-basis: 35%;
     }
 }
 </style>

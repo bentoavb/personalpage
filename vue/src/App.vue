@@ -21,7 +21,7 @@ export default {
 
 <style>
 * {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 html, body {
   margin: 0;
@@ -31,7 +31,7 @@ html, body {
   height: 100%;
   display: grid;
   grid-template-rows: 0.1fr 1fr;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0.3fr;
   grid-template-areas: 
   "menu info"
   "content info";

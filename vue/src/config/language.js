@@ -5,12 +5,13 @@ Vue.use(VueI18n);
 
 const messages = {
     'en': {
-        welcome: "Welcome",
+        home: "About",
         eng: ["Mechatronics","Engineering","Student"],
         infobiography: "I'm an engineering student involved in scientific projects on system analysis and control. My main research interest is evolving fuzzy systems. And last but not least I like mobile and web programming.",
         infocontact: "main contact:",
         education: "Academic Education",
         publication: "Main Publications",
+        researchgate: "See my other publications on my ResearchGate page",
         educationItens: [
             {
                 title: "B.Sc. Student in Mechatronics Engineering",
@@ -50,12 +51,13 @@ const messages = {
         projects: ["Page under construction","Visit my Github page"]
     },
     'br': {
-        welcome: "Bem vindo",
+        home: "Sobre",
         eng: ["Estudante de","Engenharia","Mecatrônica"],
         infobiography: "Sou estudante de engenharia envolvido em projetos científicos sobre análise e controle de sistemas. Meu principal interesse de pesquisa é sistemas fuzzy evolutivos. E por último, mas não menos importante, gosto de programação mobile e web.",
         infocontact: "contato principal:",
         education: "Formação Acadêmica",
-        publication: "Publicações Principais",
+        publication: "Principais Publicações",
+        researchgate: "Veja minhas outras publicações na minha página do ResearchGate",
         educationItens: [
             {
                 title: "Estudante de Engenharia Mecatrônica",
