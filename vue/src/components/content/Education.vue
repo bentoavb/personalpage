@@ -26,8 +26,7 @@ export default {
 
 <style>
 .education {
-    padding: 0 50px;
-    height: 100%;
+    padding: 1px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +40,12 @@ export default {
 }
 
 .education-item{
-    width: 100%;
+    width: 70%;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .education-place {
@@ -53,14 +57,17 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    margin: 5px 0;
 }
 
 @media screen and (max-width: 800px) {
     .education {
-        padding: 10px;
         font-size: 0.7rem;
         text-align: justify;
+    }
+    .education-item {
+        width: 90%;
+        margin-top: 10px;
     }
     .education-title{
         font-size: 0.9rem;
@@ -69,15 +76,10 @@ export default {
         font-size: 0.7rem;
     }
     .education-date-and-city {
-        margin: 5px 0;
         width: 100%;
     }
     ul {
         padding-left: 10px;
-    }
-
-    .education {
-        padding: 15px;
     }
 }
 </style>

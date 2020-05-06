@@ -5,18 +5,9 @@
               <flag :iso="entry.flag" v-bind:squared=false />
       </span>
     </div>
-    <div class="name">
-      <h1>Anderson Vítor Bento</h1>
-    </div>
-
-    <div class="img">
-      <h2>{{$t('eng')[0]}}<br>{{$t('eng')[1]}} {{$t('eng')[2]}}</h2>
-      <img src="@/assets/bento.jpeg" alt="">
-    </div>
     
-    <div class="email">
-      {{$t('infocontact')}} bentoavb@gmail.com
-    </div>
+    <span class="name">Anderson Vítor Bento</span>
+    
   </div>
 </template>
 
@@ -46,35 +37,25 @@ export default {
 .info {
   grid-area: info;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(100, 100, 255);
-  padding: 15px;
-  color: white;
+  justify-content: center;
+  color: rgb(100, 100, 255);
+  padding: 5px 0;
 }
 
 .name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.img {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-.img img {
-  border-radius: 30px;
-  width: 50%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .languagebuttons {
   font-size:1.0rem;
+  position: absolute;
+  top: 0;
+  right: 0;
   align-self: flex-end;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 .languagebuttons span {
   margin-left: 3px;
@@ -84,30 +65,9 @@ export default {
   cursor: pointer;
 }
 
-.email {
-  font-size: 1.15rem;
-  text-align: center;
-}
-
 @media screen and (max-width: 800px) {
-    .img-buttons h1 {
-      font-size: 1.5rem;
-    }
-    .img {
-      flex-direction: row;
-    }
-    .img img {
-      width: 30%;
-    }
-    .info .img h2 {
-      font-size: 1rem;
-    }
-    .name {
-      font-size: 0.7rem;
-    }
-    .email {
-      margin-top: 10px;
-      font-size: 1rem;
-    }
+  .name {
+    font-size: 1.5rem;
+  }
 }
 </style>

@@ -30,21 +30,17 @@ html, body {
 #app {
   height: 100%;
   display: grid;
-  grid-template-rows: 0.1fr 1fr;
-  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: 0.11fr 0.1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-  "menu info"
-  "content info";
+    "info"
+    "menu"
+    "content";
 }
 
 @media screen and (max-width: 800px) {
     #app {
-        grid-template-rows: 1fr 0.1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "info"
-        "menu"
-        "content";
+        grid-template-rows: 0.11fr 0.1fr 0.1fr;
     }
 }
 </style>

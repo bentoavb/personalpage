@@ -1,7 +1,14 @@
 <template>
   <div class="home">
-    <div class="text">
-      {{$t('infobiography')}}
+    <div class="img-text">
+      <div class="text">
+        {{$t('infobiography')}}
+      </div>
+      <img src="@/assets/bento.jpeg" alt="">
+    </div>
+
+    <div class="email">
+      {{$t('infocontact')}} bentoavb@gmail.com
     </div>
     
     <div class="links">
@@ -29,8 +36,21 @@ export default {
     flex-direction: column;
 }
 
-.home .text {
+.img-text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.img-text img {
+  width: 15%;
+  border-radius: 5px;
+}
+
+.img-text .text {
   text-align: justify;
+  width: 50%;
 }
 
 .links {
@@ -46,13 +66,19 @@ export default {
   -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 1px;
   text-decoration: none;
   font-size: 1.0rem;
+  background-color: rgb(100, 100, 255);
+  color: white;
 }
 
 .links .link:hover {
-  background-color: rgba(0, 0, 0,0.1);
+  background-color: rgba(100, 100, 255,0.7);
+}
+
+.email {
+  text-align: center;
 }
 
 
@@ -60,9 +86,21 @@ export default {
   .home {
     padding: 10px;
   }
-  .home .text{
-    margin: 15px 0;
+  .img-text {
+    margin: 10px 0;
+    flex-direction: column-reverse;
+  }
+  .img-text img {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+  .img-text .text{
     font-size: 1rem;
+    width: 90%;
+  }
+  .email {
+    font-size: 1rem;
+    margin: 10px 0;
   }
   .links {
     flex-wrap: wrap;

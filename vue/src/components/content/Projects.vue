@@ -14,7 +14,7 @@ export default {
 <style>
 .projects {
     height: 100%;
-    color: rgb(100, 100, 255);
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ export default {
     justify-content: center;
 }
 .projects a{
-  color: rgb(100, 100, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 

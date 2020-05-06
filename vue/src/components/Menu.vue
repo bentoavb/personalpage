@@ -26,19 +26,19 @@ export default {
     justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
+    background-color: rgb(100, 100, 255);
+    padding: 10px 0;
 }
+
 .menu-item {
     padding: 7px 15px;
-    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    border-radius: 5px;
-    background-color: rgb(100, 100, 255);
-    color: white;
+    border-radius: 1px;
+    color: rgb(100,100,255);
+    background-color: white;
 }
 .menu-item:hover {
     cursor: pointer;
-    background-color: rgba(100,100,255,0.65);
+    background-color: rgba(255,255,255,0.9);
 }
 @media screen and (max-width: 800px) {
     .menu {

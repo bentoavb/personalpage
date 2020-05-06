@@ -50,18 +50,22 @@ export default {
 
 <style>
 .publication {
-    padding: 0 50px;
-    height: 100%;
+    padding: 1px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .publication-item {
-    width: 100%;
+    width: 70%;
     text-decoration: none;
     color: black;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 3px;
 }
 
 .publication-title {
@@ -114,16 +118,14 @@ export default {
 
 .other-pubs{
     text-decoration: none;
-    color: rgb(100, 100, 255);
+    color: black;
     font-size: 1.3rem;
     text-align: center;
     align-self: center;
 }
 
 @media screen and (max-width: 800px) {
-    .publication{
-        padding: 10px;
-    }
+
     .publication-title{
         font-size: 0.85rem;
     }
@@ -131,7 +133,8 @@ export default {
         font-size: 0.75rem;
     }
     .publication-item {
-        margin: 10px 0;
+        margin-top: 10px;
+        width: 90%;
     }
     .publication-date-and-place{
         flex-wrap: wrap;
@@ -141,6 +144,8 @@ export default {
     }
     .other-pubs {
         font-size: 1rem;
+        margin: 15px 0;
+        width: 70%;
     }
 }
 </style>
