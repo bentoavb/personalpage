@@ -29,6 +29,7 @@ export default {
 .home {
     height: 100%;
     padding: 0 30px;
+    padding-bottom: 5px;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -91,7 +92,7 @@ export default {
     flex-direction: column-reverse;
   }
   .img-text img {
-    width: 45%;
+    width: 40%;
     margin-bottom: 15px;
   }
   .img-text .text{
