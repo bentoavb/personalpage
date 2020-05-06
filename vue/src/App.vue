@@ -40,7 +40,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
     #app {
-        grid-template-rows: 0.11fr 0.1fr 0.1fr;
+        grid-template-rows: 0.11fr 0.1fr 1fr;
     }
 }
 </style>

@@ -13,7 +13,6 @@ export default {
 
 <style>
 .projects {
-    height: 100%;
     color: rgb(0, 0, 0);
     font-size: 2rem;
     display: flex;

@@ -84,7 +84,7 @@ export default {
 
 @media screen and (max-width: 800px) {
   .home {
-    padding: 10px;
+    padding: 0 10px;
   }
   .img-text {
     margin: 10px 0;
