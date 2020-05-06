@@ -27,7 +27,6 @@ export default {
 
 <style>
 .home {
-    height: 100%;
     padding: 0 30px;
     padding-bottom: 5px;
     font-size: 1.5rem;
