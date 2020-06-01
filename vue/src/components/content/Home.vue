@@ -46,11 +46,12 @@ export default {
 .img-text img {
   width: 15%;
   border-radius: 5px;
+  display: none;
 }
 
 .img-text .text {
   text-align: justify;
-  width: 50%;
+  width: 90%;
 }
 
 .links {
@@ -62,11 +63,11 @@ export default {
 }
 .links .link {
   color: black;
-  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
   padding: 10px;
-  border-radius: 1px;
+  border-radius: 5px;
   text-decoration: none;
   font-size: 1.0rem;
   background-color: rgb(100, 100, 255);
@@ -91,12 +92,12 @@ export default {
     flex-direction: column-reverse;
   }
   .img-text img {
-    width: 40%;
+    width: 55%;
     margin-bottom: 15px;
+    display: block;
   }
   .img-text .text{
     font-size: 1rem;
-    width: 90%;
   }
   .email {
     font-size: 1rem;

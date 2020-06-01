@@ -58,7 +58,7 @@ export default {
 }
 
 .publication-item {
-    width: 70%;
+    width: 80%;
     text-decoration: none;
     color: black;
     -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);

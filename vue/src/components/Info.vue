@@ -7,7 +7,7 @@
     </div>
     
     <span class="name">Anderson Vítor Bento</span>
-    
+    <img src="@/assets/bento.jpeg" alt="">
   </div>
 </template>
 
@@ -37,19 +37,22 @@ export default {
 .info {
   grid-area: info;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  color: rgb(100, 100, 255);
+  background-color: rgb(100, 100, 255);
+  color: white;
   padding: 5px 0;
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 2.0rem;
   font-weight: bold;
 }
 
 .languagebuttons {
-  font-size:1.0rem;
+  font-size:1.5rem;
   position: absolute;
   top: 0;
   right: 0;
@@ -59,15 +62,28 @@ export default {
 }
 .languagebuttons span {
   margin-left: 3px;
+  border-radius: 5px;
 }
 
 .languagebuttons span:hover {
   cursor: pointer;
 }
 
+.info img {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .name {
     font-size: 1.5rem;
+  }
+  .info img {
+    display: none;
+  }
+  .languagebuttons {
+    font-size:1.0rem;
   }
 }
 </style>
