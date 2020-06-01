@@ -33,7 +33,7 @@ const messages = {
                 ]
             },
             {
-                title: "Electromechanical Technician",
+                title: "High School and Electromechanical Technician",
                 place: "Federal Center for Technological Education of Minas Gerais",
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brazil",
@@ -79,7 +79,7 @@ const messages = {
                 ]
             },
             {
-                title: "Técnico em Eletromecânica",
+                title: "Ensino Médio e Técnico em Eletromecânica",
                 place: "Centro Federal de Educação Tecnológica de Minas Gerais",
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brasil",
