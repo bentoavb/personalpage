@@ -1,9 +1,9 @@
 <template>
   <div class="menu">
-      <div class="menu-item" @click="navigate('/')">{{$t('home')}}</div>
-      <div class="menu-item" @click="navigate('/education')">{{$t('education')}}</div>
-      <div class="menu-item" @click="navigate('/publications')">{{$t('publication')}}</div>
-      <div class="menu-item" @click="navigate('/projects')">{{$t('projectsTitle')}}</div>
+      <div class="menu-item" @click="navigate('/')"><i class="far fa-user"></i> {{$t('home')}}</div>
+      <div class="menu-item" @click="navigate('/education')"><i class="fas fa-university"></i> {{$t('education')}}</div>
+      <div class="menu-item" @click="navigate('/publications')"><i class="fas fa-book-open"></i> {{$t('publication')}}</div>
+      <div class="menu-item" @click="navigate('/projects')"><i class="fas fa-server"></i> {{$t('projectsTitle')}}</div>
   </div>
 </template>
 
@@ -40,6 +40,8 @@ export default {
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-between;
 }
 .menu-item:hover {
     cursor: pointer;
