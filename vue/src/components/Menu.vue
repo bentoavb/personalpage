@@ -49,6 +49,7 @@ export default {
 @media screen and (max-width: 800px) {
     .menu {
         padding: 5px 3px;
+        padding-top: 0px;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;

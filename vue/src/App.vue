@@ -39,7 +39,7 @@ html, body {
 
 @media screen and (max-width: 800px) {
     #app {
-      grid-template-rows: 0.11fr 0.1fr 1fr;
+      grid-template-rows: 40px 80px auto;
       grid-template-columns: 1fr;
       grid-template-areas: 
         "info"
