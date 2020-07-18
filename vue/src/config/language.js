@@ -7,7 +7,7 @@ const messages = {
     'en': {
         home: "About",
         eng: ["Mechatronics","Engineering","Student"],
-        infobiography: "I'm a mechatronics engineering student at CEFET-MG Divinópolis. Since the beginning of the course, I have been involved in scientific projects on systems analysis and control with an emphasis on evolving fuzzy systems. I participated in two conferences of the Brazilian Automatic Society (CBA 2018 and SBAI 2019) to present the results of the projects. And last but not least, I like mobile and web programming.",
+        infobiography: "I am a student of mechatronic engineering at CEFET-MG Divinópolis. I have been studying control systems since 2017 and currently work with fault diagnosis and fault tolerant control through evolving fuzzy systems. And last but not least, I like mobile and web programming.",
         infocontact: "main contact:",
         education: "Academic Education",
         publication: "Main Publications",
@@ -53,7 +53,7 @@ const messages = {
     'br': {
         home: "Sobre",
         eng: ["Estudante de","Engenharia","Mecatrônica"],
-        infobiography: "Sou estudante de engenharia mecatrônica no CEFET-MG Unidade Divinópolis. Desde o início do curso, estou envolvido em projetos científicos sobre análise e controle de sistemas com ênfase em sistemas fuzzy evolutivos. Participei de dois congressos da Sociedade Brasileira de Automática (CBA 2018 e SBAI 2019) para apresentar resultados dos projetos. E por último, mas não menos importante, gosto de programação mobile e web.",
+        infobiography: "Sou estudante de engenharia mecatrônica no CEFET-MG Divinópolis. Estudo sistemas de controle desde 2017 e atualmente trabalho com diagnóstico de falhas e controle tolerante a falhas através de sistemas fuzzy evolutivos. E por último, mas não menos importante, gosto de programação mobile e web.",
         infocontact: "contato principal:",
         education: "Formação Acadêmica",
         publication: "Principais Publicações",

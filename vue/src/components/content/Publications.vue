@@ -19,6 +19,14 @@ export default {
         return {
             publicationItens: [
                 {
+                    title: "Evolving granular control with high-gain observers for feedback linearizable nonlinear systems",
+                    author: "Anderson Bento, Lucas Oliveira, Ignácio Rubio Scola, Valter Leite, Fernando Gomide",
+                    year: "2020",
+                    doi: "https://doi.org/10.1007/s12530-020-09349-y",
+                    place: "Evolving Systems Journal",
+                    icon: "fas fa-book"
+                },
+                {
                     title: "Evolving granular feedback linearization: Design, analysis, and applications",
                     author: "Lucas Oliveira, Anderson Bento, Valter Leite, Fernando Gomide",
                     year: "2020",
