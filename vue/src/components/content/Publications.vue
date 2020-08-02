@@ -3,10 +3,8 @@
         <a v-for="item in publicationItens" :href="item.doi" target="_blank" :key="item.title" class="publication-item">
             <div class="publication-title">{{item.title}}</div>
             <div class="publication-author">{{item.author}}</div>
-            <div class="publication-date-and-place">
-                <span class="place"> <i :class="item.icon"></i> {{item.place}}</span>
-                <span><i class="fas fa-calendar-alt"></i> {{item.year}}</span>
-            </div>
+            <div class="place"> <i :class="item.icon"></i> {{item.place}}</div>
+            <div class="year"> <i class="fas fa-calendar-alt"></i> {{item.year}}</div>
         </a>
         <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="other-pubs">{{$t('researchgate')}} <i class="fab fa-researchgate"></i></a>
     </div>
@@ -22,33 +20,17 @@ export default {
                     title: "Evolving granular control with high-gain observers for feedback linearizable nonlinear systems",
                     author: "Anderson Bento, Lucas Oliveira, Ignácio Rubio Scola, Valter Leite, Fernando Gomide",
                     year: "2020",
-                    doi: "https://doi.org/10.1007/s12530-020-09349-y",
+                    doi: "https://www.researchgate.net/publication/343027110_Evolving_granular_control_with_high-gain_observers_for_feedback_linearizable_nonlinear_systems",
                     place: "Evolving Systems Journal",
                     icon: "fas fa-book"
                 },
                 {
                     title: "Evolving granular feedback linearization: Design, analysis, and applications",
                     author: "Lucas Oliveira, Anderson Bento, Valter Leite, Fernando Gomide",
-                    year: "2020",
-                    doi: "https://doi.org/10.1016/j.asoc.2019.105927",
+                    year: "2019",
+                    doi: "https://www.researchgate.net/publication/337264549_Evolving_granular_feedback_linearization_Design_analysis_and_applications",
                     place: "Applied Soft Computing Journal",
                     icon: "fas fa-book"
-                },
-                {
-                    title: "Linearização por realimentação granular robusta com algoritmo evolutivo Takagi-Sugeno: Análise e avaliação de desempenho",
-                    author: "Anderson Bento, Lucas Oliveira, Valter Leite, Fernando Gomide",
-                    doi: "https://www.doi.org/10.17648/sbai-2019-111229",
-                    icon: "fas fa-map-marked",
-                    year: "2019",
-                    place: "Simpósio Brasileiro de Automação Inteligente"
-                },
-                {
-                    title: "State Estimator Application in DC Motors of a Mobile Robot",
-                    author: "Anderson Bento, Lucas Oliveira, Ignacio Rubio Scola, Ariany Oliveira",
-                    doi: "https://www.doi.org/10.20906/CPS/CBA2018-0374",
-                    icon: "fas fa-map-marked",
-                    year: "2018",
-                    place: "Congresso Brasileiro de Automática"
                 }
             ]
         }
@@ -76,6 +58,10 @@ export default {
     border-radius: 3px;
 }
 
+.publication-item div {
+    margin-bottom: 5px;
+}
+
 .publication-title {
     color: rgb(100, 100, 255);
     font-weight: bold;
@@ -86,36 +72,11 @@ export default {
     font-size: 1.1rem;
 }
 
-
-.publication-date-and-place {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 5px 0;
-}
-
-.publication-date-and-place .doi{
+.place{
     font-weight: bold;
-     -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    border-radius: 3px;
 }
 
-.doi:hover {
-    background-color: rgba(0,0,0,0.1);
-}
-
-.publication-date-and-place .doi a {
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    margin: 0;
-    padding: 0 5px;
-}
-
-.publication-date-and-place .place{
+.year{
     font-weight: bold;
 }
 
@@ -138,17 +99,14 @@ export default {
         font-size: 0.85rem;
     }
     .publication-author {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
     .publication-item {
         margin-top: 10px;
         width: 90%;
     }
-    .publication-date-and-place{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        font-size: 0.65rem;
+    .place, .year{
+        font-size: 0.85rem;
     }
     .other-pubs {
         font-size: 1rem;
