@@ -1,20 +1,32 @@
 <template>
-  <div class="home">
-    <div class="img-text">
-      <div class="text">
-        {{$t('infobiography')}}
-      </div>
-      <img src="@/assets/bento.jpeg" alt="">
-    </div>
+  <div class="home-container">
+    <div class="home">
 
-    <div class="email">
-      {{$t('infocontact')}} bentoavb@gmail.com
-    </div>
-    
-    <div class="links">
-      <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="link"><i class="fab fa-researchgate"></i> ResearchGate</a>
-      <a href="https://github.com/bentoavb" target="_blank" class="link"><i class="fab fa-github"></i> GitHub</a>
-      <a href="http://lattes.cnpq.br/5455772822240957" target="_blank" class="link"><i class="far fa-file-alt"></i> Curriculum Lattes</a>
+      <div class="left">
+        <img src="@/assets/bento.jpeg" alt="">
+        
+        <span>
+          <h1>Anderson Bento</h1> 
+          <hr style="color: white;">
+          <h4>{{$t('infocontact')}} bentoavb@gmail.com</h4>
+        </span>
+        
+        <div class="links">
+          <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="link"><i class="fab fa-researchgate"></i></a>
+          <a href="https://github.com/bentoavb" target="_blank" class="link"><i class="fab fa-github"></i></a>
+          <a href="http://lattes.cnpq.br/5455772822240957" target="_blank" class="link"><i class="far fa-file-alt"></i></a>
+          <a href="https://twitter.com/bentoavb/" target="_blank" class="link"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/bentoavb/" target="_blank" class="link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="right">
+        <span>{{$t('infobiography1')}}</span>
+        <span>{{$t('infobiography2')}}</span>
+        <span>{{$t('infobiography3')}}</span>
+        
+      </div>
+      
     </div>
   </div>
 </template>
@@ -25,91 +37,85 @@ export default {
 }
 </script>
 
-<style>
-.home {
-    padding: 0 30px;
-    padding-bottom: 5px;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.img-text {
+<style scoped>
+.home-container{
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.home {
+    width: 50%;
+    height: 75%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "left right";
 }
 
-.img-text img {
-  width: 15%;
-  border-radius: 5px;
-  display: none;
+.left {
+  color: white;
+  grid-area: left;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: rgba(100, 100, 255, 1);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
 }
 
-.img-text .text {
+.right{
+  grid-area: right;
+  padding: 30px;
+  font-size: 1.1rem;
   text-align: justify;
-  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right span {
+  margin-top: 10px;
 }
 
 .links {
-  width: 100%;
+  font-size: 1.7rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
 }
+
 .links .link {
-  color: black;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
-  padding: 10px;
-  border-radius: 5px;
   text-decoration: none;
-  font-size: 1.0rem;
-  background-color: rgb(100, 100, 255);
   color: white;
 }
 
-.links .link:hover {
-  background-color: rgba(100, 100, 255,0.7);
-}
-
-.email {
-  text-align: center;
+img {
+  width: 60%;
+  border-radius: 300px;
 }
 
 
 @media screen and (max-width: 800px) {
   .home {
-    padding: 0 10px;
+    height: 95%;
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.1fr;
+    grid-template-areas: "left" "right";
   }
-  .img-text {
-    margin: 10px 0;
-    flex-direction: column-reverse;
+  .left{
+    padding: 15px 0;
   }
-  .img-text img {
-    width: 55%;
-    margin-bottom: 15px;
-    display: block;
-  }
-  .img-text .text{
-    font-size: 1rem;
-  }
-  .email {
-    font-size: 1rem;
-    margin: 10px 0;
-  }
-  .links {
-    flex-wrap: wrap;
-  }
-  .links .link {
-    font-size: 0.7rem;
-    margin-bottom: 10px;
-  }
+
 }
 
 </style>

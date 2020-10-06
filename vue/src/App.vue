@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <Info/>
-    <Content/>
-    <Menu/>
+    <LanguageButtons />
+    <Content />
+    <Menu />
   </div>
 </template>
 
 <script>
-import Content from './components/Content.vue'
-import Info from './components/Info.vue'
-import Menu from './components/Menu.vue'
+import LanguageButtons from './components/tools/LanguageButtons';
+import Content from './components/Content';
+import Menu from './components/Menu';
 
 export default {
   name: 'App',
-  components: {
-    Content, Info, Menu
-  }
+  components: {LanguageButtons, Content, Menu}
 }
 </script>
 
@@ -30,21 +28,19 @@ html, body {
 #app {
   height: 100%;
   display: grid;
-  grid-template-rows: 0.01fr 1fr;
-  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-columns:1fr;
   grid-template-areas: 
-    "info content"
-    "menu content";
+    "menu"
+    "content";
 }
 
 @media screen and (max-width: 800px) {
-    #app {
-      grid-template-rows: 40px 80px auto;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-        "info"
-        "menu"
-        "content";
-    }
+  #app {
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+      "menu"
+      "content";
+  }
 }
 </style>

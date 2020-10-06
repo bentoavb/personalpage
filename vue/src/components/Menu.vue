@@ -22,17 +22,16 @@ export default {
 .menu{
     grid-area: menu;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     font-weight: bold;
-    background-color: rgb(100, 100, 255);
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .menu-item {
-    width: 80%;
-    margin: 10px 5px;
+    margin: 10px;
     padding: 7px 15px;
     border-radius: 5px;
     color: white;
@@ -45,21 +44,28 @@ export default {
 }
 .menu-item:hover {
     cursor: pointer;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0,0,0,0.3);
+}
+.menu-item i {
+    margin-right: 30px;
 }
 
 @media screen and (max-width: 800px) {
     .menu {
         padding: 5px 3px;
+        margin-top: 25px;
         padding-top: 0px;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
     }
     .menu-item{
-        margin: 3px 0;
+        margin: 5px 0;
         font-size: 0.65rem;
         flex-basis: 35%;
+    }
+    .menu-item i {
+        margin-right: 5px;
     }
 }
 </style>

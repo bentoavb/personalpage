@@ -6,7 +6,6 @@
             <div class="place"> <i :class="item.icon"></i> {{item.place}}</div>
             <div class="year"> <i class="fas fa-calendar-alt"></i> {{item.year}}</div>
         </a>
-        <a href="https://www.researchgate.net/profile/Anderson_Bento2" target="_blank" class="other-pubs">{{$t('researchgate')}} <i class="fab fa-researchgate"></i></a>
     </div>
 </template>
 
@@ -42,19 +41,20 @@ export default {
 .publication {
     padding: 1px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .publication-item {
-    width: 80%;
+    width: 25%;
+    min-height: 30%;
     text-decoration: none;
     color: black;
     -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-    padding: 10px;
+    padding: 30px;
     border-radius: 3px;
 }
 
@@ -94,7 +94,9 @@ export default {
 }
 
 @media screen and (max-width: 800px) {
-
+    .publication{
+        flex-direction: column;
+    }
     .publication-title{
         font-size: 0.85rem;
     }
@@ -103,7 +105,7 @@ export default {
     }
     .publication-item {
         margin-top: 10px;
-        width: 90%;
+        width: 75%;
     }
     .place, .year{
         font-size: 0.85rem;

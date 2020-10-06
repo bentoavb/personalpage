@@ -7,7 +7,9 @@ const messages = {
     'en': {
         home: "About",
         eng: ["Mechatronics","Engineering","Student"],
-        infobiography: "I am a student of mechatronic engineering at CEFET-MG Divinópolis. I have been studying control systems since 2017 and currently work with fault diagnosis and fault tolerant control through evolving fuzzy systems. And last but not least, I like mobile and web programming.",
+        infobiography1: "I am a student of mechatronic engineering at CEFET-MG Divinópolis.",
+        infobiography2: "I have been studying control systems since 2017 and currently work with fault diagnosis and fault tolerant control through evolving fuzzy systems.",
+        infobiography3: "And last but not least, I like mobile and web programming.",
         infocontact: "main contact:",
         education: "Academic Education",
         publication: "Main Publications",
@@ -18,6 +20,7 @@ const messages = {
                 place: "Federal Center for Technological Education of Minas Gerais",
                 date: "2018 - Ongoing",
                 city: "Divinópolis, MG, Brazil",
+                image: 'cefet.png',
                 others: [
                     {
                         title: "Since 2018, I'm working on a research project on control systems and evolving fuzzy systems, with an emphasis on:",
@@ -37,6 +40,7 @@ const messages = {
                 place: "Federal Center for Technological Education of Minas Gerais",
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brazil",
+                image: 'cefet.png',
                 others: [
                     {
                         title: "I was a member of a robotics competition group in the second and third year of the course."
@@ -53,7 +57,9 @@ const messages = {
     'br': {
         home: "Sobre",
         eng: ["Estudante de","Engenharia","Mecatrônica"],
-        infobiography: "Sou estudante de engenharia mecatrônica no CEFET-MG Divinópolis. Estudo sistemas de controle desde 2017 e atualmente trabalho com diagnóstico de falhas e controle tolerante a falhas através de sistemas fuzzy evolutivos. E por último, mas não menos importante, gosto de programação mobile e web.",
+        infobiography1: "Sou estudante de engenharia mecatrônica no CEFET-MG Divinópolis.",
+        infobiography2: "Estudo sistemas de controle desde 2017 e atualmente trabalho com diagnóstico de falhas e controle tolerante a falhas através de sistemas fuzzy evolutivos.",
+        infobiography3: "E por último, mas não menos importante, gosto de programação mobile e web.",
         infocontact: "contato principal:",
         education: "Formação Acadêmica",
         publication: "Principais Publicações",
@@ -64,6 +70,7 @@ const messages = {
                 place: "Centro Federal de Educação Tecnológica de Minas Gerais",
                 date: "2018 - Em andamento",
                 city: "Divinópolis, MG, Brasil",
+                image: 'cefet.png',
                 others: [
                     {
                         title: "Desde 2018, estou trabalhando em um projeto de pesquisa sobre sistemas de controle e sistemas fuzzy evolutivos, com ênfase em:",
@@ -83,6 +90,7 @@ const messages = {
                 place: "Centro Federal de Educação Tecnológica de Minas Gerais",
                 date: "2015 - 2017",
                 city: "Divinópolis, MG, Brasil",
+                image: 'cefet.png',
                 others: [
                     {
                         title: "Fui membro de um grupo de competição de robótica no segundo e terceiro ano do curso."
